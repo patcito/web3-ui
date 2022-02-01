@@ -1,5 +1,18 @@
 # @web3-ui/hooks
 
+## 0.10.0
+
+### Minor Changes
+
+- [#276](https://github.com/Developer-DAO/web3-ui/pull/276) [`f18bff0`](https://github.com/Developer-DAO/web3-ui/commit/f18bff025fdc16d5805ee3bdc466499629068a52) Thanks [@berteotti](https://github.com/berteotti)! - You can now pass in args to the exec fn in useTransaction just like you would with ethers. You don't need to pass it all inside an array anymore.
+
+  ```tsx
+  execute(['Hello', { value: '10' }]);
+
+  // is now
+  execute('Hello', { value: '10' });
+  ```
+
 ## 0.9.0
 
 ### Minor Changes
